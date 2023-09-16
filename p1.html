@@ -1,0 +1,260 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link src="https://fonts.googleapis.com/css?family='Lora'&effect=''">
+        <style>
+            *
+            {
+                margin:0;
+                box-sizing: border-box;
+            }
+            html,body
+            {
+                font-family: "Lora", sans-serif;
+                background-image: url("favric.png");
+                position:relative;
+            }
+            .heading
+            {
+                position: relative;
+                height:50%;   
+                background: url("head.png") center no-repeat;
+                background-size: cover;
+            }
+            .status
+            {
+                width: fit-content;
+                font-size:50px;
+                text-align: center;
+                background-color: rgba(245, 223, 196, 0.3);
+                border-radius: 5px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .nav
+            {
+                width:100%;
+                position: sticky;
+                top:0;
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+            }
+            a.n
+            {
+                text-decoration: none;
+                color:black;
+                width:25%;
+                background-color: bisque;
+                border-right: 2px solid rgba(210, 143, 109, 0.525);
+                text-align: center;
+                padding:5px;
+                font-size: larger;
+                transition: 0.2s;
+            }
+            a.n:hover
+            {
+                background-color: rgba(94, 54, 33, 0.8);
+                color: burlywood;
+            }
+            h1
+            {
+                padding:5%;
+                background-color: rgba(245, 245, 220, 0.601);
+                width:max-content;
+                margin-left:25%;
+            }
+            p
+            {
+                font-size: larger;
+                text-align: justify;
+                width:50%;
+                margin-left: 25%;
+                padding-bottom:50px;
+            }
+            .img1
+            {
+                box-shadow: 0 4px 8px 0 black,0 6px 20px 0 black;
+                background-size: cover;
+            }
+
+            .det
+            {
+                background-color:rgba(255, 235, 205, 0.5);
+                padding:5%;
+                color:black;
+                border-radius: 5px;
+                width:50%;
+                margin-left:25%;
+            }
+
+            form
+            {
+                font-size: large;
+            }
+
+            input[type="text"]
+            {
+                border:none;
+                outline: none;
+                font-size: large;
+                width:80%;
+                padding-top:3%;
+                background-color: rgba(255, 235, 205, 0);
+                color:rgba(0, 0, 0, 0.6);
+                border-bottom: 2px solid rgba(0, 0, 0, 0.245);
+                transition: 0.3s;
+            }
+
+            input:focus
+            {
+                border-bottom-color:black;
+            }
+
+            textarea
+            {
+                border:none;
+                outline:none;
+                resize:none;
+                padding-top:3%;
+                width:80%;
+                font-size:large;
+                background-color: rgba(255, 235, 205, 0);
+                color:rgba(0, 0, 0, 0.6);
+                border-bottom: 2px solid rgba(0, 0, 0, 0.245);
+                transition: 0.3s;
+            }
+
+            textarea:focus
+            {
+
+                border-bottom-color:black;
+            }
+
+            .sub
+            {
+                font-size:large;
+                border: none;
+                
+                background-color: rgba(255, 235, 205, 0);
+                border:2px solid rgba(0, 0, 0, 0.245);
+                transition: 0.3s;
+            }
+
+            .sub:hover
+            {
+                background-color: rgba(245, 245, 220, 0);
+                border: 2px solid black;
+                border-radius: 2px;
+            }
+
+            a.f
+            {
+                text-decoration:none; 
+                color:black; 
+                text-align: center; 
+            }
+
+            a.f:hover
+            {
+                color: rgb(230, 139, 94);
+            }
+
+            @media screen and (max-width:600px) 
+            {
+                .nav
+                {
+                    flex-direction: column;
+                }
+                a.n
+                {
+                    width:100%;
+                    border-bottom: 2px solid rgba(210, 143, 109, 0.525);
+                    border-right:none;
+                }
+                .img2
+                {
+                    height: 600px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!--header-->
+        <div class="heading" id="t">
+            <div class="status">
+                <span>Open <br> Now</span>
+            </div>
+        </div>
+        <!--navbar-->
+        <div class="nav">
+            <a class="n" href="#home">Home</a>
+            <a class="n" href="#about">About</a>
+            <a class="n" href="#work">Work</a>
+            <a class="n" href="#contact">Contact</a>
+        </div>
+        <!--home-->
+        <div class="home" id="home" style="background-color: rgba(245, 245, 220, 0.601);">
+            <br><br>
+            <h1>Needle</h1><br>
+            <p>Welcome to Needle, your gateway to a world of creative craftsmanship! 
+                At Needle, we take immense pride in being more than just a stitching company; 
+                we are your ultimate partner in transforming fabrics into stunning masterpieces.
+                Whether you are a seasoned sewing enthusiast or a complete beginner, our mission 
+                is to inspire, empower, and bring your creative visions to life. With a wide range of top-quality 
+                threads, needles, and accessories, coupled with our team of skilled artisans, we are dedicated 
+                to providing unparalleled products and services. From intricate embroidery to flawless tailoring, 
+                Needle is here to sew together the threads of innovation and tradition, making every stitch an 
+                expression of your individuality. Join us on this exciting journey as we weave dreams into reality, 
+                one stitch at a time. Welcome to Needle - where artistry meets craftsmanship!
+            </p>
+        </div>
+        <div class="img1" style=" text-align: center;">
+            <img src="favric.png" width="650">
+        </div>
+        <!--about us-->
+        <div id="about" style="background-color: rgba(245, 245, 220, 0.601); margin-bottom:5%">
+            <br><br>
+            <h1>About Us</h1><br>
+            <p>
+                Needle is a leading stitching company that offers a wide range of services and products, 
+                catering to individuals and businesses. Their core services include custom tailoring of 
+                garments, intricate embroidery, clothing alterations, and repair services. They also provide
+                sewing workshops and classes to foster a community of sewing enthusiasts. 
+                Needle stocks high-quality stitching supplies and offers custom embroidery and monogramming services. 
+                They collaborate with fashion designers and provide corporate branding through embroidery for businesses and sports teams. 
+                With a focus on quality craftsmanship and customer satisfaction, 
+                Needle aims to bring creative visions to life through the art of stitching.
+            </p>
+        </div>
+        <!-- our work so far-->
+        <div id="work" style="margin-bottom:5%;">
+            <h1>Work</h1>
+            <div class="img2" style="background-color: rgba(0, 0, 0, 0.752); text-align: center; margin-top:5%; background-size: cover;">
+                <img src="w2.png" width="300" style="padding:1%; background-color: aliceblue; box-shadow: 0 4px 8px 0 black,0 6px 20px 0 black;">
+                <img src="w1.png" width="300" style="padding:1%; background-color: aliceblue; box-shadow: 0 4px 8px 0 black,0 6px 20px 0 black;">
+            </div>
+            
+        </div>
+        <!--contact form-->
+        <div id="contact">
+            <h1>Contact Us</h1>
+            <div class="det" style="margin-top:5%">
+                <form action="#home">
+                    Name <br><input type="text" name="name" placeholder="Ben Foster" required><br><br>
+                    Email <br><input type="text" name="email" placeholder="benfoster03@gmail.com" required><br><br>
+                    Subject <br><input type="text" name="sub"><br><br>
+                    Message <br><textarea name="message" required="required" rows="5" ></textarea><br><br>
+                    <input type="submit" value="Send" class="sub" style="padding:2px";>
+                </form>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div>
+            <a class="f" href="#t"><h2 style="padding:5%;">Top</h2></a>
+        </div>
+    </body>
+</html>
